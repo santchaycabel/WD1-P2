@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <h1 style="font-family: cursive; color: rgb(255, 215, 0);">HTML & CSS Cheat Sheet</h1><!--this is the heading of my cheat sheet
+  & i used cursive font, therefore, i didn't include the title tag-->
+  </style>
+  <style>
+    body {
+      font-family: 'Courier New', monospace; /*Uses the font Courier New (if not available, any monospace font).*/
+      margin: 20px; /*Adds space around the content.*/
+      background-image: url(67160.jpg); /*Sets a background image for the page.*/
+      background-repeat: no-repeat; /*Prevents the background image from repeating.*/
+      background-position: center; /*Centers the background image.*/
+      background-size: 100% 100%; /*Makes the background image cover the entire page.*/
+    }
+    h1 {
+      text-align: center; /*Centers the main heading.*/
+      margin-bottom: 20px; /*Adds space below the heading.*/
+    }
+    .container { /*Container for tables*/
+      display: grid; /*Uses CSS Grid to arrange tables.*/
+      grid-template-columns: 1fr 1fr; /*Creates two equal-width columns.*/
+      gap: 20px; /*Adds space between the tables.*/
+    }
+    table {
+      width: 100%; /*Makes the table take full width of its container.*/
+      border-collapse: collapse; /*Removes space between table cells.*/
+      background: #1c1c1c; /*White background for the table.*/
+      color: #ffffff; /*Black text color for the table.*/
+      box-shadow: 0 4px 10px rgba(255, 215, 0, 0.4); /*Adds a subtle shadow around the table.*/
+    }
+    th, td {
+      border: 1px solid #160101; /*Adds a border to table cells.*/
+      padding: 8px; /*Adds space inside table cells.*/
+      font-size: 14px; /*Sets a readable font size.*/
+    }
+    th {
+      background: #d4af37; /*Gold background for header cells.*/
+      color: #000; /*Black text color for header cells.*/
+      text-align: left; /*Aligns header text to the left.*/
+    }
+    tr:nth-child(even) { /*Styles even rows differently for readability.*/
+      background: #2a2a2a; /*Light gray background for even rows.*/
+    }
+    code {
+      background: #eee; /*Light gray background for code snippets.*/
+      padding: 2px 4px; /*Adds space around code snippets.*/
+      border-radius: 4px; /*Rounds the corners of code snippets.*/
+      font-family: Consolas, monospace; /*Uses Consolas font for code snippets.*/
+    }
+  </style>
+</head>
+<body>
+  <div class="container"> <!--
+    <!--HTML Tags-->
+<table><!--this is my tanle tag which i want to organize my table cheat sheet-->
+  <!-- Header Row -->
+  <tr><!--this is table row for implement the starting untlil the buttom line of my table-->
+    <th style="font-family: Courier New, monospace;">HTML Tag/Attribute</th><!--this is table header tag will show the header of my cheat sheat data-->
+    <th style="font-family: Courier New, monospace;">Description & Sample</th>
+  </tr>
+
+  <tr>
+    <td>&lt;h1&gt;–&lt;h6&gt;</td><!--accoroding to this table data tag, i include %it & &gt beacuse i want to avoid extra spaces in my code and display it correctly-->
+    <td>Headings = &lt;h1&gt;Title&lt;/h1&gt;</td><!--the concepts of the cheat sheet-->
+  </tr>
+  <tr>
+    <td>&lt;p&gt;</td>
+    <td>Paragraph = &lt;p&gt;Text&lt;/p&gt;</td><!--paragraph is a part of text that have own line and spacing, and it used by <p> tag to create a paragraph.-->
+  </tr>
+  <tr>
+    <td>&lt;head&gt;, &lt;body&gt;</td><!--head=information about the page (metadata). body=actual content of the page.-->
+    <td>Head: metadata, Body: visible content</td>
+  </tr>
+  <tr>
+    <td>&lt;meta&gt;</td>
+    <td>Metadata = &lt;meta charset="UTF-8"&gt;</td><!--ex. A photo has data (the picture itself).
+Its metadata can be: the date it was taken, the camera used, or the location.-->
+  </tr>
+  <tr>
+    <td>&lt;a&gt;</td>
+    <td>Link = &lt;a href="url"&gt;Click&lt;/a&gt;</td><!--for hyperlinks-->
+  </tr>
+  <tr>
+    <td>&lt;table&gt;</td><!--to show the data rows and columns like in excels-->
+    <td>
+      Table = &lt;table&gt;&lt;tr&gt;&lt;td&gt;Data&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+    </td>
+  </tr>
+  <tr>
+    <td>&lt;ul&gt;, &lt;ol&gt;, &lt;li&gt;</td>
+    <td>Lists = &lt;ul&gt;&lt;li&gt;Item&lt;/li&gt;&lt;/ul&gt;</td><!--Used to display items either as bulleted (unordered) or numbered (ordered).-->
+  </tr>
+  <tr>
+    <td>&lt;form&gt;</td><!--A form is used to collect user input (like text, password, email, buttons, etc.).-->
+    <td>Form = &lt;form&gt;&lt;input type="text"&gt;&lt;/form&gt;</td>
+  </tr>
+  <tr>
+    <td>&lt;title&gt;</td>
+    <td>Page title inside &lt;head&gt;</td><!--it os used to implement the title of your weboage to avpid confusion-->
+  </tr>
+  <tr>
+    <td>&lt;link rel="icon"&gt;</td>
+    <td>Favicon = &lt;link rel="icon" href="favicon.ico"&gt;</td><!--A favicon is the small icon that appears in the browser tab next to the page title.-->
+  </tr>
+  <tr>
+    <td>&lt;b&gt;, &lt;i&gt;, &lt;u&gt;</td>
+    <td>Text formatting tags</td><!--it is commony used for programmers to create a better result and organized code-->
+  </tr>
+  <tr>
+    <td>&lt;img&gt;</td>
+    <td>Image = &lt;img src="pic.jpg" alt="desc"&gt;</td><!--this code is the container of a image-->
+  </tr>
+  <tr>
+    <td>&lt;!-- --&gt;</td>
+    <td>Comment in HTML</td><!--A comment is hidden text in your HTML code.
+It is not shown on the webpage, only in the source code.
+Used for notes, explanations, or reminders.-->
+  </tr>
+  <tr>
+    <td>&lt;nav&gt;, &lt;aside&gt;, &lt;footer&gt;</td>
+    <td>Layout tags</td><!--hese are semantic tags that help structure the webpage layout.
+They make code easier to read and improve search engine.-->
+  </tr>
+</table>
+
+
+    <!-- CSS COMMON TOPICS -->
+    <table>
+      <tr>
+        <th>CSS Topic</th>
+        <th>Description & Example</th><!--this are the table headers-->
+      </tr>
+      <tr>
+        <td>Selectors</td><!--A selector tells CSS which element(s) in the HTML should be styled.
+(It “selects” the target).-->
+        <td>p { color: red; }</td></tr>
+      <tr>
+        <td>Comments</td><!--/*---*/-->
+        <td>/* This is a comment */</td>
+      </tr>
+      <tr>
+        <td>Colors</td><!--Colors in CSS are used to style text, backgrounds, borders, etc.
+You can set colors in different formats-->
+        <td>color: #ff0000; or color: red;</td><!--#ff0000;=HEX Code=A 6-digit code (Red, Green, Blue).-->
+      </tr>
+      <tr>
+        <td>Measurements</td><!--Measurements in CSS define the size of elements (width, height, font, spacing, etc.).-->
+        <td>px, %, em, rem, vh, vw</td><!--pixels (common for font-size, padding, margin), cm,mm,in= centimeters, millimeters, inches (rarely used),
+        pp= points (1/72 of an inch)-->
+      </tr>
+    </table>
+
+    <!-- CSS PROPERTIES -->
+    <table>
+      <tr>
+        <th>CSS Property</th>
+        <th>Description & Example</th>
+      </tr>
+      <tr>
+        <td>background</td><!--Changes the color or design behind an element.-->
+        <td>background-color: yellow;</td>
+      </tr>
+      <tr>
+        <td>border</td><!--A line around the element (like a box).-->
+        <td>border: 1px solid black;</td>
+      </tr>
+      <tr>
+        <td>padding / margin</td><!--Padding → space inside the box (around the text).
+Margin → space outside the box (between other elements).-->
+        <td>padding: 10px; margin: 20px;</td>
+      </tr>
+      <tr>
+        <td>opacity</td><!--Makes something see-through or transparent.-->
+        <td>opacity: 0.5;</td>
+      </tr>
+      <tr>
+        <td>height / width</td><!--Sets the size of an element.-->
+        <td>height: 100px; width: 200px;</td>
+      </tr>
+      <tr>
+        <td>text & fonts</td><!--Changes how text looks.-->
+        <td>font-size: 16px; font-family: Arial;</td></tr>
+      <tr>
+        <td>icons</td><!--Small images like home, heart, or search (using Font Awesome).-->
+        <td>Font Awesome &lt;i class="fa fa-home"&gt;&lt;/i&gt;</td>
+      </tr>
+      <tr>
+        <td>list & tables</td><!--Styles lists or tables.-->
+        <td>list-style-type: square;</td>
+      </tr>
+      <tr>
+        <td>position / z-index / overflow / float / inline-block</td><!--position → where the element is placed (absolute, relative, fixed).
+z-index → what goes on top or behind.
+overflow → what happens if content is too big (scroll, hidden).
+float → pushes an element left or right.
+inline-block → stays in line but still acts like a block.-->
+        <td>position: absolute; z-index: 2; overflow: hidden; float: left; display: inline-block;</td>
+      </tr>
+      <tr>
+        <td>navigation bar & buttons</td><!--For menus and clickable buttons (usually at the top).-->
+        <td>nav a { display: block; background: blue; }</td>
+      </tr>
+      <tr>
+        <td>dropdown</td><!--A menu that shows extra options when you hover or click.-->
+        <td>Use: hover for dropdown menus</td>
+      </tr>
+      <tr>
+        <td>image gallery</td><!--Arranges pictures nicely.-->
+        <td>Use CSS Grid or Flexbox</td>
+      </tr>
+    </table>
+  </div>
+</body>
+</html>
+
+<!--REFERENCES
+* HTML structural tags:
+a.)https://www.learnbycheating.com/subjects/html-css/cheatsheet?utm_source=chatgpt.com
+b.)https://staff.washington.edu/weller/css/intro.html?utm_source=chatgpt.com
+* Form structures
+a.)https://www3.ntu.edu.sg/home/ehchua/programming/webprogramming/HTML_CSS_Basics.html?utm_source=chatgpt.com
+* CSS basics
+a.)https://www.w3schools.com/css/css_boxmodel.asp?utm_source=chatgpt.com
+*Box model & spacing
+a.)https://www3.cs.stonybrook.edu/~pfodor/courses/CSE316/L03-HTML_CSS.pdf?utm_source=chatgpt.com
+*Layout & positioning
+a.)https://www.w3schools.com/css/css_boxmodel.asp?utm_source=chatgpt.com
+*Backgrounds, borders, shadows
+a.)https://htmlcheatsheet.com/css/?utm_source=chatgpt.com
+*Typography & links
+a.)https://www3.cs.stonybrook.edu/~pfodor/courses/CSE316/L03-HTML_CSS.pdf?utm_source=chatgpt.com
+*Navbar & UI components
+a.)https://www.learnbycheating.com/subjects/html-css/cheatsheet?utm_source=chatgpt.com
